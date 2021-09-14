@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish",sans-serif;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:burlywood;
+}
+
+.container{
+    background: white;
+    position: relative;
+    padding:40px 40px;
+}
+
+.container h2{
+    color:#111;
+    margin-bottom: 45px;
+    line-height: 1rem;
+    font-weight: 500px;
+    padding-left:10px;
+    border-left: 5px solid #e91e63;
+}
+
+.container .inputBox{
+    position: relative;
+    width: 300px;
+    height:46px;
+    margin-bottom: 35px;
+}
+
+.container .inputBox:last-child{
+    margin-bottom: 0;
+}
+
+.container .inputBox input{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #111;
+    background:transparent;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .inputBox span{
+    position: absolute;
+    top:1px;
+    left: 1px;
+    padding: 10px;
+    display:inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .inputBox input:focus ~ span,
+.container .inputBox input:valid ~ span
+{
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px;
+}
+
+.container .inputBox input[type="button"]{
+    background:#2196f3;
+    color: #fff;
+    border: none;
+    max-width: 120px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.container .inputBox input[type="button"]:hover{
+    background: #e91e63;
+    transition: 3s;
+}
+
+.noti{
+    position:fixed;
+    bottom:15px;
+    right:10px;
+}
+
+.noti .message{
+    max-width:200px;
+    min-width:200px;
+    padding:5px 10px;
+    background:green;
+    margin-bottom: 5px;
+}
+
+
